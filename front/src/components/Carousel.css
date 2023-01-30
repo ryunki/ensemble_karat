@@ -35,13 +35,14 @@
 } */
 
 .carousel-item.active .bg-picture{
-  transform:scale(1.04);
-  transition:all 2s ease-in-out;
+  /* transform:scale(1.04); */
+  /* transition:all 2s ease-in-out; */
 }
  .bg-picture {
   background-position: center;
   background-repeat: no-repeat;
-  width:100%;
+  width:auto;
+ 
 }
 
 @media (min-width: 768px){

@@ -4,12 +4,10 @@ import {Carousel} from 'react-bootstrap';
 
 import './Carousel.css'
 const imgUrl = [
-  "/sushi/plate/sushi1.png",
-  "/sushi/plate/sushi2.png",
-  "/sushi/plate/sushi3.png",
-  "/sushi/plate/sushi4.png",
-  "/sushi/plate/sushi5.png",
-  "/sushi/plate/sushi6.png"
+  "team_2.png",
+  "team_1.png",
+  "ensemble_1.png",
+  "ensemble_2.png",
 ]
 function CarouselFade() {
   const [y, setY] = useState(0);
@@ -39,25 +37,30 @@ function CarouselFade() {
 
   return (
     <>
-    {/* <div className="d-block w-100 bg-picture"
-        style={{backgroundImage: `url(${imgUrl[0]})`, backgroundPositionY:y}}/> */}
-    <Carousel fade  interval={2000} >
+    {/* <div>
+      <img src="team_1.png"/>
+    </div> */}
+    {/* <video width="320" height="240" controls>
+      <source src="/videos/sample_1.mp4"></source>
+    </video> */}
+
+    {/* <Carousel fade interval={1000} >
       {imgUrl.map((item, idx)=>(
-        <Carousel.Item key={idx} style={{display:"flex"}}>
+        <Carousel.Item key={idx} style={{display:"flex", justifyContent: "center"}} >
           <img src={item}
             className="bg-picture"
           />
-          {/* <div
+          <div
             className="bg-picture"
             style={{backgroundImage: `url(${item})`, backgroundPositionY:y/100+"vw"}}
-          /> */}
+          />
           <Carousel.Caption className="title-overlay-wrapper">
             <h1 className="car-text-overlay title-1">Tokyoya</h1>
             <p className="car-text-overlay title-2">sushi & bulgogi</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
-    </Carousel>
+    </Carousel> */}
     </>
   );
 }
