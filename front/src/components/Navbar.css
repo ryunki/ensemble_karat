@@ -14,13 +14,15 @@ nav.navbar > div {
   /* justify-content: space-evenly; */
     width: 100%;
     background-color:#f9f8f8;
+    /* background-color:#A6C6B9; */
+    /* background-color:#2A503B; */
 }
 .navbar-text{
   letter-spacing: .25em;
   text-transform: uppercase;
     /* color: #001c58; */
-    font-size: 11px;
-    line-height: 2.273em;
+  font-size: 11px;
+  line-height: 2.273em;
 }
 .logo-title{
   font-family: "Cormorant Garamond",serif;
@@ -51,23 +53,33 @@ nav.navbar > div {
     margin-inline: 0.2rem;
   } */
   .nav-logo{
-    width:40%;
+    width: 25vw;
   }
   .logo-under-text{
     font-size: 0.4rem;
-    letter-spacing: 0rem;
+    letter-spacing: 0.2rem;
+  }
+  .navbar-text{
+    font-size: 0.4rem;
+  }
+  .nav-hover{
+    margin-inline: 0.7rem;
   }
 }
-@media screen and (max-width: 576px) {
+@media (min-width:480px) and (max-width: 576px) {
   .nav-logo{
-    width:30%;
+    width: 25vw;
   }
   .logo-under-text{
     padding-top: 3px;
     font-size: 0.4rem;
     letter-spacing: 0.2rem;
   }
+  .navbar-text{
+    font-size: 0.55rem;
+  }
 }
+
 @media screen and (min-width: 576px) {
   .nav-logo{
     width:20vh;
@@ -103,7 +115,6 @@ nav.navbar > div {
 /* when selected */
 .nav-link.active{
   transform:scale(1.1);
-  color:#2A503B !important;
 }
 .nav-link.active div.nav-line{
   background:linear-gradient(to right, #A6C6B9, grey, white);

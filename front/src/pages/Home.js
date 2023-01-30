@@ -21,24 +21,24 @@ const Home = () => {
     ]
   })
 
-  // const option={
-  //   threshold:1, //100% of the element must be on the screen to trigger the "entries" function
-  //   rootMargin: "", //this sets the margin limits of a container to diplay elements
-  // }
+  const option={
+    threshold:1, //100% of the element must be on the screen to trigger the "entries" function
+    rootMargin: "", //this sets the margin limits of a container to diplay elements
+  }
 
-  // window.addEventListener('scroll', (event)=>{ //without this line, intersectionObserver doesnt work
-  //   const rows = document.querySelectorAll('.home-row')
-  //   const observer = new IntersectionObserver((entries)=>{
-  //         entries.forEach(entry=>{
-  //           entry.target.classList.toggle("show", entry.intersectionRatio === 1)
-  //           // this stops observing the elements that were once observed
-  //           if(entry.isIntersecting) observer.unobserve(entry.target) 
-  //       })
-  //     },option)
-  //   rows.forEach(row=>{
-  //     observer.observe(row)
-  //   })
-  // })
+  window.addEventListener('scroll', (event)=>{ //without this line, intersectionObserver doesnt work
+    const rows = document.querySelectorAll('.home-row')
+    const observer = new IntersectionObserver((entries)=>{
+          entries.forEach(entry=>{
+            entry.target.classList.toggle("show", entry.intersectionRatio === 1)
+            // this stops observing the elements that were once observed
+            if(entry.isIntersecting) observer.unobserve(entry.target) 
+        })
+      },option)
+    rows.forEach(row=>{
+      observer.observe(row)
+    })
+  })
 
   return (
     <>
