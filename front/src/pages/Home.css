@@ -1,0 +1,50 @@
+/* .home-description::first-letter{
+    color: #001c58;
+    font-size: 5rem;
+  } */
+.logo{
+  width:50px; 
+  height:50px;
+}
+
+.home-semi-title{
+  font-family: "Kalam", serif;
+}
+.home-sushi-picture{
+  border-radius:7%;
+  box-shadow: 0px 0px 21px 2px black;
+    -webkit-box-shadow: 0px 0px 21px 2px black;
+    -moz-box-shadow:  0px 0px 21px 2px black;
+    /* border-radius:6%; */
+}
+
+
+.home-row{
+  margin:20px 0px;
+  /* transform:translateY(10px); */
+  opacity:0.05;
+  transition:all 3s ease-out;
+}
+.home-row.show{
+  /* transform:translateY(0px); */
+  transition:all 0.5s ease-in;
+  opacity:1;
+}
+.row .col-contents-photo{
+  position: relative;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain; */
+}
+.row .col-contents-blur-effect{
+    /* position: absolute;
+    top: 0px; */
+    /* box-shadow: inset 0px 0px 6px 6px white; 
+    -webkit-box-shadow: inset 0px 0px 6px 6px white; 
+    -moz-box-shadow: inset 0px 0px 6px 6px white; 
+    border-radius:6%; */
+}
+.row .col-contents-text{
+  padding:1rem;
+}
